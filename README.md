@@ -1,2 +1,2 @@
 # osisnusa.github.io
-Pengurus osis smk nu sunan ampel 
+Website Pengurus OSIS SMK NU SUNAN AMPEL
