@@ -43,7 +43,7 @@ section h2:before {
   top: -44px;
   left: -100px;
 }
-.masjid {
+.osisnusa {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -64,7 +64,7 @@ section h2:before {
     background-position: 1200px;
   }
 }
-.masjid:before {
+.osisnusa:before {
   content: "";
   position: absolute;
   bottom: 0;
