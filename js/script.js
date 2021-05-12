@@ -10,7 +10,7 @@
 
 // On your marks, get set...
 $(document).ready(function(){
-						
+const cottonCursor = new Cotton('#cotton-cursor')						
 	// Cache the Window object
 	$window = $(window);
 	
