@@ -1,49 +1,69 @@
-/**
- * Parallax Scrolling Tutorial
- * For Smashing Magazine
- * July 2011
- *  
- * Author: Richard Shepherd
- *		   www.richardshepherd.com
- * 		   @richardshepherd   
- */
+/*! locomotive-scroll v4.1.1 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
+html.has-scroll-smooth {
+  overflow: hidden; }
 
+html.has-scroll-dragging {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
-article h2 { font-family: 'Lobster Two'; font-size: 60px; margin: 25px 0; line-height: 1em; }
+.has-scroll-smooth body {
+  overflow: hidden; }
 
-.story { height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.3); border-bottom: 1px solid rgba(0,0,0,0.4); box-shadow: 0 0 50px rgba(0,0,0,0.8);}
+.has-scroll-smooth [data-scroll-container] {
+  min-height: 100vh; }
 
-#first { background: url(../images/puckered.png) 50% 0 no-repeat fixed; }
-#second { background: url(../images/slide2.jpg) 50% 0 no-repeat fixed; }
-#fourth { background: url(../images/slide3.jpg) 50% 0 no-repeat fixed; }
-#third { background: url(../images/slide4.jpg) 50% 0 no-repeat fixed; }
-#theend { background: url(../images/puckered.png) 50% bottom no-repeat fixed; }
+[data-scroll-direction="horizontal"] [data-scroll-container] {
+  height: 100vh;
+  display: inline-block;
+  white-space: nowrap; }
 
-/* Introduction */
-#first .smashinglogo { background: url(../images/smashing-logo.png) 50% 100px no-repeat fixed; min-height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
-#first article { width: 100%; top: 300px; position: absolute; text-align: center; }
-#first article p,
-#first article a { color: #ccc; }
-#first article a { text-decoration: underline; }
-#first article a:hover { color: #fff; }
+[data-scroll-direction="horizontal"] [data-scroll-section] {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  height: 100%; }
 
-/* Background Only */
-#second { padding: 50px 0;}
-#second article { background: url(../images/grain.png) repeat #333; color: #fff; width: 445px; margin-left: 100px; padding: 10px 20px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); border: 1px solid rgba(150,150,150,0.1); }
-#second article p { margin-bottom: 25px; }
-#second article a { color: #ff0;}
+.c-scrollbar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 11px;
+  height: 100%;
+  transform-origin: center right;
+  transition: transform 0.3s, opacity 0.3s;
+  opacity: 0; }
+  .c-scrollbar:hover {
+    transform: scaleX(1.45); }
+  .c-scrollbar:hover, .has-scroll-scrolling .c-scrollbar, .has-scroll-dragging .c-scrollbar {
+    opacity: 1; }
+  [data-scroll-direction="horizontal"] .c-scrollbar {
+    width: 100%;
+    height: 10px;
+    top: auto;
+    bottom: 0;
+    transform: scaleY(1); }
+    [data-scroll-direction="horizontal"] .c-scrollbar:hover {
+      transform: scaleY(1.3); }
 
-/* Photograph */
-#third article {  background: url(../images/grain.png) repeat #333; color: #fff; padding: 10px 20px; margin: 100px 0 0 60%; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; color: #fff; position: absolute; top: 0; box-shadow: 0 0 25px rgba(0,0,0,0.3); border: 1px solid rgba(150,150,150,0.1); }
-#third .photograph { background: url(../images/photo.png) transparent 40% 100px no-repeat fixed; min-height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
-#third article p { width: 300px; margin-bottom: 25px; }
-
-/* HTML5 Video */
-#fourth article {  margin-left: 10%; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; color: #fff; position: absolute; top: 0; }
-#fourth article p { width: 300px; margin: 50px 0; }
-#fourth video { position: fixed; left: 50%; box-shadow: 0 0 25px rgba(0,0,0,0.7); z-index: 1;}
-
-/* The End */
+.c-scrollbar_thumb {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.5;
+  width: 7px;
+  border-radius: 10px;
+  margin: 2px;
+  cursor: -webkit-grab;
+  cursor: grab; }
+  .has-scroll-dragging .c-scrollbar_thumb {
+    cursor: -webkit-grabbing;
+    cursor: grabbing; }
+  [data-scroll-direction="horizontal"] .c-scrollbar_thumb {
+    right: auto;
+    bottom: 0; }
 #theend .byebye { background: url(../images/theend.png) 40% 100px no-repeat fixed; height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
 
 /* cotton */
