@@ -16,74 +16,27 @@
 </head>
 
 <body>
-<div id="#cotton-cursor"></div>
-
-  <div id="main" role="main">
-
-	<!-- Section #1 / Intro -->
-	<section id="first" class="story" data-speed="8" data-type="background">    	
-		<div class="smashinglogo" data-type="sprite" data-offsetY="100" data-Xposition="50%" data-speed="-2"></div>		
-		<article>
-
-			<img src="osisnusa.png" alt="tutorial-title" width="711" height="242" />
-			<p>Upload by osisnusa / Instagram: <a href="http://instagram.com/osisnusa" target="_blank">osisnusa</a> / Web: <a href="http://osisnusa.com">osisnusa.com</a></p>
-			<p>GitHub: <a href="https://osisnusa.github.io/">Lihat disini!</a></p>
-	    </article>
-	</section>
-
-	<!-- Section #2 / Background Only -->
-	<section id="second" class="story" data-speed="4" data-type="background">
-		<article>
-			<h2>Pengurus OSIS SMK NU Sunan Ampel</h2>
-		    	<p>In this section we are sliding the background at a different speed to the rest of the page.</p>
-		    	<p>As this text box is scrolling at the same speed as the page, and faster than the background, it creates this lovely parallax effect.</p>
-		    	<p>You can find all the HTML, CSS and the all important JavaScript files over at <a href="https://github.com/richardshepherd/Parallax-Scrolling">GitHub</a> - so why don't you drop by for some hardcore forking action?</p>
-		    	<p>Backgrounds for this article were taken from the May/June 2011 Smashing Magazine Desktop backgrounds.</p>	
-		    	<p>Head back to <a href="http://instagram.com/osisnusa">Media sosial</a>, or <a href="http://osisnusa.com">osisnusa.com</a>.</p>		
-		</article>
-	</section>
-	
-	<!-- Section #3 / Photos -->
-	<section id="third" class="story" data-speed="6" data-type="background" data-offsetY="250">    	
-		<div class="photograph" data-type="sprite" data-offsetY="1250" data-Xposition="25%" data-speed="2"></div>
-    	<article>
-    		<h2>Scrolling Sprites</h2>
-	    	<div class="textbox">    	
-		    	<p>The next step in your parallax scrolling adventure is to create some sprites!</p>
-		    	<p>I have cut out one of the photos in this background and use it as a sprite. It scrolls at a different speed to the background <i>and</i> the window, and it's this effect that's used so well on Nike Better World and other parallax sites..</p>
-		    	<p>Using too many sprites can slow down older computers, and you need to use some clever maths (and trial & error!) to work out their placement on the page.</p>
-		    </div>
-    	</article>
-	</section>	
-	
-
-	<!-- Section #4 / HTML5 Video -->
-	<section id="fourth" class="story" data-speed="8" data-type="background" data-offsetY="250">
-    	<article>
-    		<h2>HTML5 Video</h2>
-	    	<div class="textbox">    	
-		    	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-		    	<p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-		    	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. o.</p>
-		    </div>
-    	</article>	
-		 <video controls width="640" width="480" data-type="video" src="https://www.youtube.com/embed/DZiPVf8rwdw?autoplay=1&start=2" data-offsetY="2400" data-speed="1.5">
-			<source src="https://www.youtube.com/embed/DZiPVf8rwdw?autoplay=1&start=2" type="video/ogg" />
-			<source src="https://www.youtube.com/embed/DZiPVf8rwdw?autoplay=1&start=2" type="video/mp4" />
-			<source src="https://www.youtube.com/embed/DZiPVf8rwdw?autoplay=1&start=2" type="video/webm" />
-		</video>
-	</section>	
-
-	<!-- Section #5 / The End-->
-	<section id="theend" class="story" data-speed="8" data-type="background" data-offsetY="250">    	
-		<div class="byebye" data-type="sprite" data-offsetY="-1600" data-Xposition="50%" data-speed="-2"></div>	
-	</section>
-	
-  </div> <!-- // End of #main -->
-
+<div data-scroll-container>
+    <div data-scroll-section>
+        <h1 data-scroll>Hey</h1>
+        <p data-scroll>👋</p>
+    </div>
+    <div data-scroll-section>
+        <h2 data-scroll data-scroll-speed="1">What's up?</h2>
+        <p data-scroll data-scroll-speed="2">😬</p>
+    </div>
+</div>
 
 
   <!-- Our Javascript, starting with jQuery -->
+  <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js" crossorigin="anonymous"></script>
+  <script nomodule src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<script>
+    (function () {
+        var scroll = new LocomotiveScroll();
+    })();
+</script>
   <script src='js/libs/jquery-1.6.1.min.js'></script>
   <script src="js/script.js"></script>
   <!--[if lt IE 7 ]>
