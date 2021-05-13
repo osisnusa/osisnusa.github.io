@@ -1,48 +1,32 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-
-  <title>Pengurus osis | SMK NUSA</title>
-  <meta name="description" content="How to create a parallax scrolling effect with jQuery, HTML and CSS">
-  <meta name="author" content="Richard Shepherd, Smashing Magazine">
-
-  <!-- Mmmmm, Google Web Fonts. That's a paddlin'. -->
-  <link href='http://fonts.googleapis.com/css?family=Lobster+Two:700&v2' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Kartu Ucapan</title>
 </head>
-
 <body>
-<div data-scroll-container>
-    <div data-scroll-section>
-        <h1 data-scroll>Hey</h1>
-        <p data-scroll>👋</p>
-    </div>
-    <div data-scroll-section>
-        <h2 data-scroll data-scroll-speed="1">What's up?</h2>
-        <p data-scroll data-scroll-speed="2">😬</p>
-    </div>
-</div>
-
-
-  <!-- Our Javascript, starting with jQuery -->
-  <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js" crossorigin="anonymous"></script>
-  <script nomodule src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll" crossorigin="anonymous"></script>
-<script src="script.js"></script>
-<script>
-    (function () {
-        var scroll = new LocomotiveScroll();
-    })();
-</script>
-  <script src='js/libs/jquery-1.6.1.min.js'></script>
-  <script src="js/script.js"></script>
-  <!--[if lt IE 7 ]>
-    <script src="js/libs/dd_belatedpng.js"></script>
-    <script>DD_belatedPNG.fix("img, .png_bg");
-  <![endif]-->
-
+    <div class="card">
+		<div class="imgBox">
+			<Sediv class="bark"></Sediv>
+			<img src="https://i.ibb.co/0qGRZr4/ketupat-fix.png">
+		</div>
+		<div class="details">
+			<h4 class="color1">Selamat Idul Fitri </h2> <!-- Tulis judul di sini -->
+			<h4 class="color2 margin">1 Syawal 1442H</h3> <!-- Tulis sub-judul di sini -->
+			<p>Untuk semua teman, saudara, kerabat</p> <!-- Tulis bait awal di sini -->
+			<p>Dengan segala kerendahan hati,</p>
+			<p>Baik bisa berjabat langsung,</p>
+			<p>Maupun tidak bisa berjabat langsung,</p>
+			<p>Maka, maafkanlah atas segala kesalahan</p>
+			<p>baik yang disengaja</p>
+			<p>maupun yang tak disengaja.</p> 
+      <!-- Tulis bait akhir di sini -->
+			<p class="text-right">Mohon maaf lahir & batin</p> <!-- Tulis tertanda di sini -->
+			<p class="text-right">~Pengurus OSIS & Keluarga</p>
+		</div> <!-- Tulis nama kamu di sini -->
+	</div>
 </body>
 </html>
