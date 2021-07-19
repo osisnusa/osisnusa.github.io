@@ -12,7 +12,18 @@ body {
 ::selection {
     background: transparent;
 }
-
+footer {
+  width: 100%;
+  display: inline-block;
+  margin: 2em 0;
+  height: 70px;
+  background-color: #999;
+  .copyright {
+    width: 50%;
+    float: left;
+    @media (max-width: 600px) {
+      width: 100%;
+    }
 h4 {
     font-size: 26px;
     line-height: 1px;
