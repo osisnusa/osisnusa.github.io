@@ -19,6 +19,15 @@ h4 {
     font-family: 'Amatic SC', cursive !important;
 }
 
+h1 {
+    font-size: 26px;
+    line-height: 1px;
+    weidth: 250;
+    height: 250;
+    text-align: right;
+    font-family: 'Amatic SC', cursive !important;
+}
+
 .color1 {
     color: #1BBC9B
 }
@@ -37,7 +46,7 @@ h4 {
     top: 50%;
     left: 50%;
     width: 300px;
-    height: 300px;
+    height: 400px;
     background: #e0e1dc;
     transform-style: preserve-3d;
     transform: translate(-50%, -50%) perspective(2000px);
