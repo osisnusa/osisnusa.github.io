@@ -28,6 +28,15 @@ h1 {
     font-family: 'Amatic SC', cursive !important;
 }
 
+h2 {
+    font-size: 26px;
+    line-height: 1px;
+    weidth: 250;
+    height: 250;
+    text-align: left;
+    font-family: 'Amatic SC', cursive !important;
+}
+
 .color1 {
     color: #1BBC9B
 }
