@@ -20,8 +20,6 @@ h4 {
 }
 
 h1 {
-    font-size: 26px;
-    line-height: 1px;
     weidth: 250;
     height: 250;
     text-align: right;
@@ -29,10 +27,8 @@ h1 {
 }
 
 h2 {
-    font-size: 26px;
-    line-height: 1px;
-    weidth: 250;
-    height: 250;
+    weidth: 150;
+    height: 150;
     text-align: left;
     font-family: 'Amatic SC', cursive !important;
 }
