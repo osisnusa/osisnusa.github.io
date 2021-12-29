@@ -1,42 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://osisnusa.github.io/os.png">
-<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <title>Kartu Ucapan | Selamat Hari Raya Idul Adha 1442 H</title>
+DATA HOSTED WITH ♥ BY PASTEBIN.COM - DOWNLOAD RAW - SEE ORIGINAL
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="tr_TR">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Magelang1337 HTML TYPE</title>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=3.4.2'></script>
+<script type='text/javascript'>
+$(function() {
+var baslangic = "magelang1337@admin~$:"; //What you type into quotes comes to the beginning of the sentence.
+var d = 0; // Enter a value of 0 to write down.
+var text1 = ""; // You need to write it down..
+var depo = ""; // The previous text is stored here. Alter.
+var b = baslangic.length; // The length of the previous textin is stored here. Alter.
+var text = "";
+var repeat = 1; // The recurrence setting can be 0 or 1.
+var ch = 0; // The number of characters determines which character to switch to the other line. 0-100 like
+var item = 0; // Specifies which list to start with 0 first<li>From the start.</li>
+var items = $('#caption li').length;
+var time = 1000;
+var delay = 60; // Writing speed.
+var wait = 100; // The speed of crossing the bottom line
+$('#showCaption').css('width', ($('#caption').width() + 20));
+function tickInterval() {
+if(item < items) {
+text = $('#caption li:eq('+item+')').text();
+type(depo+baslangic+text+"\n",baslangic+text+"\n");
+text = null;
+var tick = setTimeout(tickInterval, time);
+} else {
+if(repeat == 1) {
+ch = 0;
+item = 0;
+depo = "";
+b=baslangic.length;
+tickInterval();
+} else {
+clearTimeout(tick);
+}
+}
+}
+ 
+function type(text,text1) {
+time = delay;
+$('#showCaption').html(text.substr(0, b++));
+ch++;
+if(ch > text1.length) {
+item++;
+ch = 0;
+time = wait;
+if(d==0)
+depo += text1;
+}
+}
+ 
+var tick = setTimeout(tickInterval, time);
+});
+</script>
+<style type="text/css">
+#caption {
+display: none;
+}
+#showCaption{
+font-family:Courier New;
+font-size:15px;
+color:#FF0000;
+white-space:pre;
+font-weight:bold;
+width:350px;
+min-width:350px;
+}
+ 
+ 
+</style>
 </head>
 <body>
-<nav class="navbar navbar-light bg-cyan">
-  <div class="container-fluid">
-  </div>
-</nav>
-<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-1cd73a03-72c8-45f0-994c-c2b5380cfa1c"></div>
-	
-    <div class="card">
-		<div class="imgBox">
-			<Sediv class="bark"></Sediv>
-			<img src="https://osisnusa.github.io/w.jpg" width="300" height="500">
-		</div>
-		<div class="details">
-			<h4 class="color1">Selamat Hari Raya Idul Adha </h2> <!-- Tulis judul di sini -->
-			<h4 class="color2 margin">10 Dzulhijjah 1442 H</h3> <!-- Tulis sub-judul di sini -->
-			<p>Daging bakar bersaus tiram</p>
-			<p>Sungguh lezat untuk santapan</p>
-			<p>Allahu akbar walillaahil hamd</p>
-			<p>Selamat Idul Adha kami</p>
-<p> Ucapkan. </p>
-			<br />
-		<p class="text-right">From:</p>
-			<p class="text-right">Keluarga besar pengurus OSIS</p>
-<p class="text-right">SMK NU SUNAN AMPEL</p>
-		</div>
-	
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-	</body>
+<ul id="caption">
+<li> Ini Adalah Contoh </li>
+<li> Html Seperti Mengetik </li>
+<li> Untuk Tutorial Lainnya Dan Menarik Jangan Lupa </li>
+<li> Kunjungi Blog kami www.magelang1337.com - trims </li>
+ 
+</ul>
+<div id="showCaption"></div>
+</body>
+ 
+<body bgcolor="black">
+<body bgcolor="#000000">
+<body bgcolor="rgb(0,0,0)">
+ 
 </html>
